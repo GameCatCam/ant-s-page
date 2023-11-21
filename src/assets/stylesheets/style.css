@@ -1,0 +1,288 @@
+/* color variables for the various elements on the page */
+:root{
+    --stickyyellow: #FEFF9C;
+    --lightstickyyellow: #F9F9D0;
+    --stickypink:#ff7eb9;
+    --lightstickypink:#f5c5da;
+    --stickyblue: #7afcff;
+    --lightstickyblue:#c2f4f5;
+    --stickygreen: #B3D358;
+    --lightstickygreen:#b9ca86;
+    --inkred: #AC3235;
+    --lightinkred: #E62E1C;
+}
+
+/*general statement to keep a elements from being blue and underlined*/
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+body {
+    background: var(--lightstickyyellow);
+}
+
+/*START OF HEADER SECTION CSS*/
+/*adjusts the nametag image's size and rotation*/
+.headerimg{
+    width: 310.975px;
+    height: 211.711px;
+    transform: rotate(-5.871deg);
+    flex-shrink: 0;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    position:sticky;
+    background: var(--lightstickyyellow);
+}
+
+header h1 {
+    /*adjusts h1 element's position and rotation*/
+    display: flex;
+    width: 249.484px;
+    height: 78.807px;
+    transform: rotate(-6.911deg);
+    flex-direction: column;
+
+    /*adjusts h1 element's size and formatting*/
+    color: var(--inkred);
+    text-align: center;
+    font-family: Dela Gothic One;
+    font-size: 24px;
+    line-height: normal;
+    position:absolute;
+    left: 31.8px;
+    top: 74.32px;
+    background:none;
+    font-family: cursive;
+}
+/*adjusts position and color of secondary h1 element creating the shadow effect*/
+#h1-shadow {
+    left: 32.58px;
+    color: #C76E70;
+}
+
+nav{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    background-color: white;
+    color:var(--inkred);
+    border-radius: 25px;
+    width: 139px;
+    height: 57px;
+    
+    /*Spacing between, and position of nav placed in the bottom left of header*/
+    margin: 11px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li a {
+    color: var(--inkred);
+    font-family: cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+  }
+  /*Places a gif over the background of the nav box when hovered to border the menu option*/
+  nav ul li:hover{
+    background-image: url(../images/redpencircle.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+    background-position: center;
+  }
+
+/*START OF HERO SECTION CSS*/  
+/*adjustments for the hero image I made for the page*/
+.hero {
+    height: 400px;
+    width: 100%;
+    background: var(--stickyyellow);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*adds drop shadow under header*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.hero img {
+    height: 400px;
+}
+
+/*setting the properties for all h2 elements on the page*/
+h2{
+    font-family: cursive;
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom:5px;
+}
+
+/*adds scissor icon before and after any h2 element on the page*/
+h2::before{
+    content: url(../images/scissors_clipart.png);
+}
+h2::after{
+    content: url(../images/scissors_clipart_flipped.png);
+}
+
+/*START OF ABOUT SECTION CSS*/
+/*Position adjustor for the ABOUT section*/
+.about{
+    text-align: center;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    background-color: var(--lightstickypink);
+    /*adds drop shadow under ABOUT*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+#about-content p{
+    max-width: 600px;
+    margin: 15px auto;
+}
+#headshot{
+    width: 170px;
+    border-radius: 100px;
+    border:10px solid var(--lightinkred);
+    border-style: dashed;
+}
+/*START OF WORK SECTION CSS*/
+.work{
+    background-color: var(--lightstickyblue);
+    text-align: center;
+    /*adds drop shadow under WORK section*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.projects{
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+.projects figure img {
+    width: 75%;
+    border-radius: 100px;
+    border:3px solid var(--lightinkred);
+    border-style: dashed;
+    margin: 10px auto;
+}
+.projects figure figcaption {
+    font-size: 22px;
+    font-family: fantasy;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.projects p{
+    max-width: 250px;
+    margin: 10px auto;
+    font-weight: 700;
+}
+#horison figcaption {
+    font-size: 28px;
+}
+#horison img {
+    width: 100%;
+    flex-grow: 1;
+}
+
+/*START OF CONTACT SECTION CSS*/
+.contact{
+    background-color: var(--stickygreen);
+    text-align: center;
+    padding-bottom: 35px;
+    /*adds drop shadow under CONTACT section*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.contact p{
+    max-width: 600px;
+    margin: 15px auto;
+    font-size: 22px;
+    font-weight: 600;
+}
+#button{
+    background-color: var(--lightstickygreen);
+    font-weight: 700;
+/*START OF CONTACT:SOCIAL MEDIA SUB-SECTION CSS*/
+}
+.social-media-group {
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    background-image: url(../images/bulletinboard.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+.social-media-icons {
+    width: 50px;
+    height: 50px;
+    margin: 50px 24px;
+}
+
+/*START OF FOOTER-SECTION CSS*/
+footer{
+    width:auto;
+    text-align: center;
+    font-weight: bold;
+}
+/*Adds Copywrite symbol to footer text*/
+footer p::before {
+    content: "\00a9";
+}
+
+
+/*viewport adjustments for standard tablets*/
+@media only screen and (max-width: 1024px) {
+    .hero img{
+        width: 80vw;
+    }
+    .projects{
+        display: inline;
+        align-items: flex-start;
+        padding: 30%; /*if this is raised any higher, the social media links will not work anymore*/
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+    .projects figure figcaption {
+        font-size: 42px;
+        font-family: fantasy;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    #horison figcaption {
+        font-size: 42px;
+    }
+}
+/*viewport adjustments for phones*/
+@media only screen and (max-width: 768px) {    
+    .hero img{
+        width: 80vw;
+    }
+
+    .projects{
+        display: inline;
+        align-items: flex-start;
+        padding: 30%;
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+    .projects figure figcaption {
+        font-size: 30px;
+        font-family: fantasy;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
