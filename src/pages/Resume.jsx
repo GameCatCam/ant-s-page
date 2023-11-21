@@ -1,3 +1,4 @@
+// <!--Start of the Resume Page-->
 export default function Resume(){
     return(
         <>
