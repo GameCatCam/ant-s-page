@@ -11,7 +11,7 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Video](#video)
+- [Link to Hosted Website](#Link_to_Hosted_Website)
 - [Mockup](#mockup)
 - [Contributing](#contributing)
 - [License](#license)
@@ -46,7 +46,7 @@ The license used in this project was the MIT license! Please reference the LICEN
 
 ## Questions?
 
-You can find me here on GitHub at https://www.github.com/Anthony-GG
+You can find me here on GitHub at https://www.github.com/Anthony-GG<br>
 Otherwise, feel free to reach me at anthony@vayneglory.com
 
 ---
