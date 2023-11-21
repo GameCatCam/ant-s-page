@@ -1,68 +1,108 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* color variables for the various elements on the page */
+:root{
+  --stickyyellow: #FEFF9C;
+  --lightstickyyellow: #F9F9D0;
+  --stickypink:#ff7eb9;
+  --lightstickypink:#f5c5da;
+  --stickyblue: #7afcff;
+  --lightstickyblue:#c2f4f5;
+  --stickygreen: #B3D358;
+  --lightstickygreen:#b9ca86;
+  --inkred: #AC3235;
+  --lightinkred: #E62E1C;
 }
 
+/*general statement to keep a elements from being blue and underlined*/
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  color:inherit;
+  text-decoration: none;
 }
 
 body {
-  margin: 0;
+  background: var(--lightstickyyellow);
+}
+
+/*START OF HEADER SECTION CSS*/
+/*adjusts the nametag image's size and rotation*/
+.headerimg{
+  width: 310.975px;
+  height: 211.711px;
+  transform: rotate(-5.871deg);
+  flex-shrink: 0;
+}
+
+header{
+  height: 200px;
+  width: 100%;
+  justify-content: space-between;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  position:sticky;
+  background: var(--lightstickyyellow);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header h1 {
+  /*adjusts h1 element's position and rotation*/
+  display: flex;
+  width: 249.484px;
+  height: 78.807px;
+  transform: rotate(-6.911deg);
+  flex-direction: column;
+
+  /*adjusts h1 element's size and formatting*/
+  color: var(--inkred);
+  text-align: center;
+  font-family: Dela Gothic One;
+  font-size: 24px;
+  line-height: normal;
+  position:absolute;
+  left: 31.8px;
+  top: 74.32px;
+  background:none;
+  font-family: cursive;
+}
+/*adjusts position and color of secondary h1 element creating the shadow effect*/
+#h1-shadow {
+  left: 32.58px;
+  color: #C76E70;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+nav{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: white;
+  color:var(--inkred);
+  border-radius: 25px;
+  width: 139px;
+  height: 57px;
+  
+  /*Spacing between, and position of nav placed in the bottom left of header*/
+  margin: 11px;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a {
+  color: var(--inkred);
+  font-family: cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: none;
+}
+/*Places a gif over the background of the nav box when hovered to border the menu option*/
+nav ul li:hover{
+  background-image: url(../images/redpencircle.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 85%;
+  background-position: center;
 }

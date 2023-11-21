@@ -1,42 +1,179 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/*START OF HERO SECTION CSS*/  
+/*adjustments for the hero image I made for the page*/
+.hero {
+  height: 400px;
+  width: 100%;
+  background: var(--stickyyellow);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  /*adds drop shadow under header*/
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.hero img {
+  height: 400px;
+}
+
+/*setting the properties for all h2 elements on the page*/
+h2{
+  font-family: cursive;
+  font-size: 38px;
+  margin-top: 0px;
+  margin-bottom:5px;
+}
+
+/*adds scissor icon before and after any h2 element on the page*/
+h2::before{
+  content: url(../images/scissors_clipart.png);
+}
+h2::after{
+  content: url(../images/scissors_clipart_flipped.png);
+}
+
+/*START OF ABOUT SECTION CSS*/
+/*Position adjustor for the ABOUT section*/
+.about{
   text-align: center;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 600;
+  background-color: var(--lightstickypink);
+  /*adds drop shadow under ABOUT*/
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+#about-content p{
+  max-width: 600px;
+  margin: 15px auto;
+}
+#headshot{
+  width: 170px;
+  border-radius: 100px;
+  border:10px solid var(--lightinkred);
+  border-style: dashed;
+}
+/*START OF WORK SECTION CSS*/
+.work{
+  background-color: var(--lightstickyblue);
+  text-align: center;
+  /*adds drop shadow under WORK section*/
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.projects{
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+.projects figure img {
+  width: 75%;
+  border-radius: 100px;
+  border:3px solid var(--lightinkred);
+  border-style: dashed;
+  margin: 10px auto;
+}
+.projects figure figcaption {
+  font-size: 22px;
+  font-family: fantasy;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.projects p{
+  max-width: 250px;
+  margin: 10px auto;
+  font-weight: 700;
+}
+#horison figcaption {
+  font-size: 28px;
+}
+#horison img {
+  width: 100%;
+  flex-grow: 1;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/*START OF CONTACT SECTION CSS*/
+.contact{
+  background-color: var(--stickygreen);
+  text-align: center;
+  padding-bottom: 35px;
+  /*adds drop shadow under CONTACT section*/
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.contact p{
+  max-width: 600px;
+  margin: 15px auto;
+  font-size: 22px;
+  font-weight: 600;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#button{
+  background-color: var(--lightstickygreen);
+  font-weight: 700;
+/*START OF CONTACT:SOCIAL MEDIA SUB-SECTION CSS*/
+}
+.social-media-group {
+  display:flex;
+  justify-content: center;
+  list-style: none;
+  background-image: url(../images/bulletinboard.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+}
+.social-media-icons {
+  width: 50px;
+  height: 50px;
+  margin: 50px 24px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/*START OF FOOTER-SECTION CSS*/
+footer{
+  width:auto;
+  text-align: center;
+  font-weight: bold;
+}
+/*Adds Copywrite symbol to footer text*/
+footer p::before {
+  content: "\00a9";
+}
+
+
+/*viewport adjustments for standard tablets*/
+@media only screen and (max-width: 1024px) {
+  .hero img{
+      width: 80vw;
   }
-  to {
-    transform: rotate(360deg);
+  .projects{
+      display: inline;
+      align-items: flex-start;
+      padding: 30%; /*if this is raised any higher, the social media links will not work anymore*/
+      min-width: fit-content;
+      min-height: fit-content;
+  }
+  .projects figure figcaption {
+      font-size: 42px;
+      font-family: fantasy;
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+  #horison figcaption {
+      font-size: 42px;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/*viewport adjustments for phones*/
+@media only screen and (max-width: 768px) {    
+  .hero img{
+      width: 80vw;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .projects{
+      display: inline;
+      align-items: flex-start;
+      padding: 30%;
+      min-width: fit-content;
+      min-height: fit-content;
+  }
+  .projects figure figcaption {
+      font-size: 30px;
+      font-family: fantasy;
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
 }
