@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 
-// <!--Start of the About Section-->
+// <!--Start of the About Page-->
 export default function AboutMe() {
     return (
       <>

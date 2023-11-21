@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 
-export default function AboutMe(){
+// <!--Start of the Contact Page-->
+export default function Contact(){
     return(
         <>
             {/* <!--Start of the CONTACT Section--> */}
