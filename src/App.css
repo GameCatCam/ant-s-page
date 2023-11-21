@@ -112,7 +112,7 @@ h2::after{
   display:flex;
   justify-content: center;
   list-style: none;
-  background-image: url(../images/bulletinboard.jpg);
+  background-image: url(../src/assets/images/bulletinboard.jpg);
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
