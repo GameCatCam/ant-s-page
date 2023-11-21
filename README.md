@@ -11,7 +11,7 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Link to Hosted Website](#Link_to_Hosted_Website)
+- [Link to Hosted Website](#Link-to-Hosted-Website)
 - [Mockup](#mockup)
 - [Contributing](#contributing)
 - [License](#license)
