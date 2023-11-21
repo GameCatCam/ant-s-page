@@ -101,8 +101,16 @@ nav ul li a {
 }
 /*Places a gif over the background of the nav box when hovered to border the menu option*/
 nav ul li:hover{
-  background-image: url(../images/redpencircle.gif);
+  background-image: url(..\src\assets\images\redpencircle.gif);
   background-repeat: no-repeat;
   background-size: 100% 85%;
   background-position: center;
+}
+
+/* controls how the active webpage nav bar is highlighted */
+.active{
+  font-size: 150%;
+  font-weight: 700;
+  text-decoration: underline solid red;
+  text-decoration-thickness: 3px;
 }
