@@ -15,7 +15,7 @@ export default function Header() {
         links={[
           // Home Nav
           <li key={1}>
-            <NavLink to="/" exact> 
+            <NavLink to="/"> 
               Home
             </NavLink>
           </li>,

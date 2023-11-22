@@ -4,7 +4,7 @@ import Header from "../components/Header";
 export default function AboutMe() {
     return (
       <>
-      <div class = "about" id="about">
+      <div className = "about" id="about">
         <div id="about-content">
           <h2>ABOUT ME</h2>
           <img id="headshot" src="..\src\assets\images\Anthony_Iacano_temporary_headshot.JPG" alt="a closeup picture of Anthony Iacano" />

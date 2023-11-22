@@ -194,6 +194,42 @@ footer p::before {
   background-position: center;
 }
 
+/*START OF CONTACT-SECTION CSS, takes a lot from ABOUT class*/
+
+#contact-box {
+  background-color: var(--lightstickygreen);
+  flex-direction: column;
+}
+
+.contact-text {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#contact-button {
+  background-color: var(--lightstickyblue);
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+#contact-button:hover {
+  background-color: var(--stickyblue);
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+#contact-button-border{
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+#contact-button-border:hover{
+  background-image: url(..\src\assets\images\redpencircle.gif);
+  background-repeat: no-repeat;
+  background-size: 20% 125%;
+  background-position: center;
+}
+
 /*viewport adjustments for standard tablets*/
 @media only screen and (max-width: 1024px) {
   .hero img{
