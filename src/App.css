@@ -37,6 +37,7 @@ h2::after{
   padding-bottom: 35px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top:50px;
   font-weight: 600;
   background-color: var(--lightstickypink);
   /*adds drop shadow under ABOUT*/
@@ -103,8 +104,12 @@ h2::after{
   font-size: 22px;
   font-weight: 600;
 }
-#button{
+
+#contact-button {
   background-color: var(--lightstickygreen);
+}
+
+.button{
   font-weight: 700;
 /*START OF CONTACT:SOCIAL MEDIA SUB-SECTION CSS*/
 }
@@ -134,6 +139,45 @@ footer p::before {
   content: "\00a9";
 }
 
+/*START OF RESUME-SECTION CSS, takes a lot from ABOUT class*/
+#resume-img {
+  width: 25%;
+  display: flex;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+#resume-box {
+  background-color: var(--stickyyellow);
+  flex-direction: column;
+}
+
+#resume-link{
+  text-align: center;
+}
+
+#resume-button {
+  background-color: var(--lightstickypink);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#resume-button:hover {
+  background-color: var(--stickypink);
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+#resume-button-border{
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+#resume-button-border:hover{
+  background-image: url(..\src\assets\images\redpencircle.gif);
+  background-repeat: no-repeat;
+  background-size: 20% 125%;
+  background-position: center;
+}
 
 /*viewport adjustments for standard tablets*/
 @media only screen and (max-width: 1024px) {

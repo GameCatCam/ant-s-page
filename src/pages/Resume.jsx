@@ -2,8 +2,10 @@
 export default function Resume(){
     return(
         <>
-        <a href="..\src\assets\documents\Anthony_Iacano_Resume.pdf" download="..\src\assets\assets\documents\Anthony_Iacano_Resume.pdf" type="button" class="btn btn-outline-primary"> Download Resume </a>
-        <img id="Resume" src="..\src\assets\documents\Anthony_Iacano_Resume.png" alt="Anthony's Resume" class="card-image-top mt-3 mw-100"></img>
+            <div id = "resume-box" class="about">
+                <img id="resume-img" src="..\src\assets\documents\Anthony_Iacano_Resume.png" alt="Anthony's Resume"></img>
+                <div id="resume-button-border"><a href="..\src\assets\documents\Anthony_Iacano_Resume.pdf" download="Anthony_Iacano_Resume.pdf" id="resume-link"><button class="button"id="resume-button">Download Resume</button></a></div>
+            </div>
         </>
     );
 }
