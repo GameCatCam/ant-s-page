@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 export default function Header() {
   return (
     <header>
+      <img className="fakeheaderimg" src="..\src\assets\images\fakenametag.png" alt="a nametag with the text 'Anthony Iacano' displayed over it" />
       <div><img className="headerimg" src="..\src\assets\images\nametag.png" alt="a nametag with the text 'Anthony Iacano' displayed over it" /></div>
 
       <h1 id="h1-shadow">Anthony <br /> Iacano</h1>

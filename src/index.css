@@ -18,8 +18,10 @@ a {
   text-decoration: none;
 }
 
-body {
+html, body {
   background: var(--lightstickyyellow);
+  height: 100%;
+  margin: 0;
 }
 
 /*START OF HEADER SECTION CSS*/
@@ -29,6 +31,10 @@ body {
   height: 211.711px;
   transform: rotate(-5.871deg);
   flex-shrink: 0;
+}
+
+.fakeheaderimg{
+  display: none;
 }
 
 header{
@@ -66,7 +72,8 @@ header h1 {
   color: #C76E70;
 }
 
-nav{
+/* Original CSS */
+nav {
   display: flex;
   align-items: flex-end;
   margin-bottom: 10px;
@@ -80,17 +87,16 @@ nav ul {
 
 nav ul li {
   background-color: white;
-  color:var(--inkred);
+  color: var(--inkred);
   border-radius: 25px;
   width: 139px;
   height: 57px;
-  
-  /*Spacing between, and position of nav placed in the bottom left of header*/
   margin: 11px;
-  display:inline-flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
+
 nav ul li a {
   color: var(--inkred);
   font-family: cursive;
@@ -99,18 +105,45 @@ nav ul li a {
   line-height: normal;
   background: none;
 }
-/*Places a gif over the background of the nav box when hovered to border the menu option*/
-nav ul li:hover{
-  background-image: url(..\src\assets\images\redpencircle.gif);
+
+/* Places a gif over the background of the nav box when hovered to border the menu option */
+nav ul li:hover {
+  background-image: url(../src/assets/images/redpencircle.gif);
   background-repeat: no-repeat;
   background-size: 100% 85%;
   background-position: center;
 }
 
-/* controls how the active webpage nav bar is highlighted */
-.active{
+/* Controls how the active webpage nav bar is highlighted */
+.active {
   font-size: 150%;
   font-weight: 700;
   text-decoration: underline solid red;
   text-decoration-thickness: 3px;
 }
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 632px) {
+  nav ul li {
+    width: 30%;
+    max-width: none;
+    height: 10%;
+    max-height: none;
+    margin: 10%;
+  }
+
+  header h1 {
+    display:none;
+  }
+
+  .headerimg {
+    display:none;
+  }
+  .fakeheaderimg {
+    display: block;
+    width: 150px;
+    max-width: 300px; 
+    height: auto;
+  }
+}
+

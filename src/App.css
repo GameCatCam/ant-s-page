@@ -49,9 +49,11 @@ h2::after{
 }
 #headshot{
   width: 170px;
-  border-radius: 100px;
+  border-radius: 105px;
   border:10px solid var(--lightinkred);
   border-style: dashed;
+  padding: 50px;
+
 }
 /*START OF WORK SECTION CSS*/
 .work{
@@ -111,21 +113,34 @@ h2::after{
 
 .button{
   font-weight: 700;
-/*START OF CONTACT:SOCIAL MEDIA SUB-SECTION CSS*/
 }
+/*START OF CONTACT:SOCIAL MEDIA SUB-SECTION CSS*/
+
+
 .social-media-group {
-  display:flex;
+  display: flex;
   justify-content: center;
   list-style: none;
   background-image: url(../src/assets/images/bulletinboard.jpg);
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
+  padding: 25px;
 }
+
 .social-media-icons {
   width: 50px;
-  height: 50px;
-  margin: 50px 24px;
+  height: auto;
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .social-media-icons {
+    width: 30px; /* Adjust the width for smaller screens */
+    padding: 5px; /* Adjust padding as needed */
+  }
 }
 
 /*START OF FOOTER-SECTION CSS*/
