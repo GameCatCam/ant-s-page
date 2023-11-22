@@ -4,8 +4,7 @@
 
 ## Description
     
-### The goal of this project was-- WIP
-### Something I learned during this project-- WIP
+### The goal of this project was to update my original portfolio using the React concepts we learned in class!
 
 ## Table of Contents
 
@@ -32,7 +31,7 @@ Once that step has been taken, you should be good to start the site with 'npm st
 
 ## Mockup
 <div style="text-align:center">
-    <img src="./assets/img/" width="1000px" alt="The homepage of my portfolio site, themed as a sticky note on a bulletin board"><br>
+    <img src=".\src\assets\images\portfolio" width="1000px" alt="The homepage of my portfolio site, themed as a sticky note on a bulletin board"><br>
     The homepage of the my portfolio site (built using React)
 </div>
 
